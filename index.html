@@ -477,76 +477,79 @@ to capture high-frequency components.</p>
     <h2 class="title is-3 has-text-centered">Results</h2>
 
     <!-- 表格 -->
+<!--     <div class="table-container"> -->
+<!--       <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"> -->
+<!--         <caption><strong>Quantitative comparison to the SOTA methods on real-world datasets.</strong></caption> -->
+<!--         <thead> -->
+<!--           <tr> -->
+<!--             <th>Dataset</th> -->
+<!--             <th colspan="3">Mip-NeRF360</th> -->
+<!--             <th colspan="3">Tanks & Temples</th> -->
+<!--             <th colspan="3">Deep Blending</th> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <th>Method</th> -->
+<!--             <th>PSNR ↑</th> -->
+<!--             <th>SSIM ↑</th> -->
+<!--             <th>LPIPS ↓</th> -->
+<!--             <th>PSNR ↑</th> -->
+<!--             <th>SSIM ↑</th> -->
+<!--             <th>LPIPS ↓</th> -->
+<!--             <th>PSNR ↑</th> -->
+<!--             <th>SSIM ↑</th> -->
+<!--             <th>LPIPS ↓</th> -->
+<!--           </tr> -->
+<!--         </thead> -->
+<!--         <tbody> -->
+<!--           <tr> -->
+<!--             <td>Mip-NeRF</td> -->
+<!--             <td>29.23</td> <td>0.844</td> <td>0.207</td> -->
+<!--             <td>22.22</td> <td>0.759</td> <td>0.257</td> -->
+<!--             <td>29.40</td> <td>0.901</td> <td>0.245</td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td>2D-GS</td> -->
+<!--             <td>28.98</td> <td>0.867</td> <td>0.185</td> -->
+<!--             <td>23.43</td> <td>0.845</td> <td>0.181</td> -->
+<!--             <td>29.70</td> <td>0.902</td> <td>0.250</td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td>Fre-GS</td> -->
+<!--             <td>27.85</td> <td>0.826</td> <td>0.209</td> -->
+<!--             <td>23.96</td> <td>0.841</td> <td>0.183</td> -->
+<!--             <td>29.93</td> <td>0.904</td> <td>0.240</td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td>GES</td> -->
+<!--             <td>28.69</td> <td>0.857</td> <td>0.206</td> -->
+<!--             <td>23.35</td> <td>0.836</td> <td>0.198</td> -->
+<!--             <td>29.68</td> <td>0.901</td> <td>0.252</td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td><strong>3D-HGS (Ours)</strong></td> -->
+<!--             <td><strong>29.66</strong> (+0.78)</td> <td>0.873</td> <td>0.178</td> -->
+<!--             <td><strong>24.45</strong> (+0.85)</td> <td>0.857</td> <td>0.169</td> -->
+<!--             <td><strong>29.76</strong> (+0.35)</td> <td><strong>0.905</strong></td> <td><strong>0.242</strong></td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td>Scaffold-GS</td> -->
+<!--             <td>28.95</td> <td>0.848</td> <td>0.220</td> -->
+<!--             <td>23.96</td> <td>0.853</td> <td>0.177</td> -->
+<!--             <td><strong>30.21</strong></td> <td><strong>0.906</strong></td> <td>0.254</td> -->
+<!--           </tr> -->
+<!--           <tr> -->
+<!--             <td><strong>Scaffold-HGS (Ours)</strong></td> -->
+<!--             <td><strong>29.25</strong> (+0.30)</td> <td>0.867</td> <td>0.186</td> -->
+<!--             <td><strong>24.42</strong> (+0.46)</td> <td><strong>0.859</strong></td> <td>0.162</td> -->
+<!--             <td><strong>30.36</strong> (+0.15)</td> <td><strong>0.910</strong></td> <td><strong>0.240</strong></td> -->
+<!--           </tr> -->
+<!--         </tbody> -->
+<!--       </table> -->
+<!--     </div> -->
+<!--  -->
     <div class="table-container">
-      <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-        <caption><strong>Quantitative comparison to the SOTA methods on real-world datasets.</strong></caption>
-        <thead>
-          <tr>
-            <th>Dataset</th>
-            <th colspan="3">Mip-NeRF360</th>
-            <th colspan="3">Tanks & Temples</th>
-            <th colspan="3">Deep Blending</th>
-          </tr>
-          <tr>
-            <th>Method</th>
-            <th>PSNR ↑</th>
-            <th>SSIM ↑</th>
-            <th>LPIPS ↓</th>
-            <th>PSNR ↑</th>
-            <th>SSIM ↑</th>
-            <th>LPIPS ↓</th>
-            <th>PSNR ↑</th>
-            <th>SSIM ↑</th>
-            <th>LPIPS ↓</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Mip-NeRF</td>
-            <td>29.23</td> <td>0.844</td> <td>0.207</td>
-            <td>22.22</td> <td>0.759</td> <td>0.257</td>
-            <td>29.40</td> <td>0.901</td> <td>0.245</td>
-          </tr>
-          <tr>
-            <td>2D-GS</td>
-            <td>28.98</td> <td>0.867</td> <td>0.185</td>
-            <td>23.43</td> <td>0.845</td> <td>0.181</td>
-            <td>29.70</td> <td>0.902</td> <td>0.250</td>
-          </tr>
-          <tr>
-            <td>Fre-GS</td>
-            <td>27.85</td> <td>0.826</td> <td>0.209</td>
-            <td>23.96</td> <td>0.841</td> <td>0.183</td>
-            <td>29.93</td> <td>0.904</td> <td>0.240</td>
-          </tr>
-          <tr>
-            <td>GES</td>
-            <td>28.69</td> <td>0.857</td> <td>0.206</td>
-            <td>23.35</td> <td>0.836</td> <td>0.198</td>
-            <td>29.68</td> <td>0.901</td> <td>0.252</td>
-          </tr>
-          <tr>
-            <td><strong>3D-HGS (Ours)</strong></td>
-            <td><strong>29.66</strong> (+0.78)</td> <td>0.873</td> <td>0.178</td>
-            <td><strong>24.45</strong> (+0.85)</td> <td>0.857</td> <td>0.169</td>
-            <td><strong>29.76</strong> (+0.35)</td> <td><strong>0.905</strong></td> <td><strong>0.242</strong></td>
-          </tr>
-          <tr>
-            <td>Scaffold-GS</td>
-            <td>28.95</td> <td>0.848</td> <td>0.220</td>
-            <td>23.96</td> <td>0.853</td> <td>0.177</td>
-            <td><strong>30.21</strong></td> <td><strong>0.906</strong></td> <td>0.254</td>
-          </tr>
-          <tr>
-            <td><strong>Scaffold-HGS (Ours)</strong></td>
-            <td><strong>29.25</strong> (+0.30)</td> <td>0.867</td> <td>0.186</td>
-            <td><strong>24.42</strong> (+0.46)</td> <td><strong>0.859</strong></td> <td>0.162</td>
-            <td><strong>30.36</strong> (+0.15)</td> <td><strong>0.910</strong></td> <td><strong>0.240</strong></td>
-          </tr>
-        </tbody>
-      </table>
+      <img src="table_3DHGS.png" alt="Quantitative comparison to the SOTA methods on real-world datasets" style="width:100%; max-width:800px; display:block; margin:auto;">
     </div>
-
     <!-- 图片 -->
     <div class="has-text-centered">
       <figure>
